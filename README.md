@@ -12,6 +12,7 @@ Skills are structured prompts that load domain-specific expertise into an AI age
 | Skill | Description |
 |-------|-------------|
 | `clean-code` | Robert C. Martin's Clean Code as enforceable rules |
+| `diagnose` | Disciplined diagnosis loop for hard bugs and regressions |
 | `tdd` | Test-driven development with red-green-refactor |
 | `how-to-code` | Prerequisite thinking discipline before coding |
 | `review` | Two-axis code review (standards + spec) |
