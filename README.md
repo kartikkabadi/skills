@@ -1,0 +1,137 @@
+# Agent Skills
+
+A curated collection of reusable skill definitions for AI coding agents. Each skill is a `SKILL.md` file that teaches an agent a specific capability — from design taste to cloud infrastructure to secure coding practices.
+
+## What are skills?
+
+Skills are structured prompts that load domain-specific expertise into an AI agent's context. When a task matches a skill's trigger, the agent reads the `SKILL.md` file and gains focused knowledge, conventions, and procedures for that domain. They work across any agent harness that supports skill loading (Claude Code, Codex, Cursor, OpenClaw, etc.).
+
+## Skills included
+
+### Development Practices
+| Skill | Description |
+|-------|-------------|
+| `clean-code` | Robert C. Martin's Clean Code as enforceable rules |
+| `tdd` | Test-driven development with red-green-refactor |
+| `how-to-code` | Prerequisite thinking discipline before coding |
+| `review` | Two-axis code review (standards + spec) |
+| `improve` | Codebase improvement planning |
+| `improve-codebase-architecture` | Architecture-focused improvement |
+| `repo-inspection` | Deep codebase understanding |
+| `full-output-enforcement` | Complete code generation without stubs |
+
+### Design & UI
+| Skill | Description |
+|-------|-------------|
+| `high-end-visual-design` | Premium agency-quality web design |
+| `design-taste-frontend` | Senior UI/UX engineering metrics |
+| `gpt-taste` | Elite GSAP motion and UX |
+| `image-to-code` | Website image-to-code implementation |
+| `industrial-brutalist-ui` | Raw mechanical Swiss typographic interfaces |
+| `minimalist-ui` | Clean editorial-style interfaces |
+| `redesign-existing-projects` | Upgrade existing sites to premium quality |
+| `stitch-design-taste` | Google Stitch design system |
+| `brandkit` | Premium brand identity generation |
+| `imagegen-frontend-web` | Premium web design direction images |
+| `imagegen-frontend-mobile` | Premium mobile app screen concepts |
+
+### Agent Workflows
+| Skill | Description |
+|-------|-------------|
+| `handoff` | Agent-to-agent handoff documentation |
+| `agent-input-trust` | Treat external content as evidence |
+| `agent-verification-discipline` | Verify claims before asserting |
+| `caveman` | Ultra-compressed communication |
+| `prototype` | Throwaway prototyping for design exploration |
+| `qa` | Interactive QA session workflow |
+| `triage` | Issue triage through state machines |
+
+### Writing
+| Skill | Description |
+|-------|-------------|
+| `writing-shape` | Shape raw material into an article |
+| `writing-beats` | Beat-by-beat narrative construction |
+| `writing-fragments` | Mine raw material for article fragments |
+| `edit-article` | Edit and improve articles |
+
+### Planning
+| Skill | Description |
+|-------|-------------|
+| `to-prd` | Convert conversation into a PRD |
+| `to-issues` | Break plans into actionable issues |
+| `grill-me` | Stress-test plans through interrogation |
+| `grill-with-docs` | Challenge plans against existing domain model |
+
+### Cloudflare
+| Skill | Description |
+|-------|-------------|
+| `cloudflare` | Comprehensive Cloudflare platform |
+| `cloudflare-email-service` | Transactional email with Cloudflare |
+| `cloudflare-one` | Zero Trust and SASE |
+| `durable-objects` | Stateful Durable Objects |
+| `workers-best-practices` | Production Workers best practices |
+| `wrangler` | Workers CLI deployment |
+| `turnstile-spin` | Turnstile CAPTCHA setup |
+| `web-perf` | Web performance analysis |
+| `sandbox-sdk` | Sandboxed code execution |
+| `agents-sdk` | Build AI agents on Cloudflare Workers |
+
+### Security
+| Skill | Description |
+|-------|-------------|
+| `supply-chain-install-protection` | Package manager supply chain security |
+| `vibe-security` | Audit vibe-coded applications |
+| `git-guardrails-claude-code` | Git safety hooks for Claude Code |
+| `git-branch-worktree-discipline` | Safe git branch/worktree workflows |
+
+### DevOps & Workflow
+| Skill | Description |
+|-------|-------------|
+| `setup-pre-commit` | Husky pre-commit hooks |
+| `opensrc` | Fetch dependency source code |
+| `migrate-to-shoehorn` | TypeScript assertion migration |
+| `scaffold-exercises` | Exercise directory scaffolding |
+
+### Business & Product
+| Skill | Description |
+|-------|-------------|
+| `telephony-product-architecture` | Phone call product design |
+| `unit-economics-analysis` | SaaS unit economics analysis |
+
+### Meta
+| Skill | Description |
+|-------|-------------|
+| `find-skills` | Discover available agent skills |
+| `write-a-skill` | Create new skill definitions |
+| `private-intelligence-reader` | Build personal intelligence readers |
+
+## Usage
+
+Each skill directory contains a `SKILL.md` file. Load them into your agent harness:
+
+### Claude Code / Codex / Cursor
+```bash
+# Symlink or copy to your skills directory
+cp -r skills/* ~/.agents/skills/
+```
+
+### Direct loading
+Skills are designed to be referenced by name. When you ask an agent to do something matching a skill's domain, reference the skill:
+
+```
+Load clean-code skill and review this code.
+Use high-end-visual-design for this landing page.
+Load cloudflare and deploy this Worker.
+```
+
+## Creating your own skills
+
+See the `write-a-skill` skill in this repo, or copy one of the existing skills as a template. Each skill should focus on a specific domain and include:
+- When to use this skill (trigger conditions)
+- Core knowledge and conventions
+- Procedures and workflows
+- Examples where helpful
+
+## License
+
+MIT
