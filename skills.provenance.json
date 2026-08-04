@@ -6,6 +6,110 @@
     "third_party_rule": "Third-party and adapted skills retain their pinned upstream license and attribution.",
     "restricted_rule": "Entries with redistribution=restricted must be excluded from public exports."
   },
+  "license_files": [
+    {
+      "path": "LICENSE",
+      "scope": "Kartik-original material only",
+      "sha256": "3ca7bdb58fd20b6cc2707c5dd1e6d4dc4dd3ea55419e332f92bcb2730c679481",
+      "source": null
+    },
+    {
+      "path": "LICENSES/Matt-Pocock-MIT.txt",
+      "scope": "Pinned upstream license text",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "2ab958093e83e0ec752e6c1c5932da465bf23e0c",
+        "path": "LICENSE",
+        "blob": "f1dd2c09108dde1a5f56097cee8461b3ea834499",
+        "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+      }
+    },
+    {
+      "path": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "scope": "Pinned upstream license text",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+        "path": "LICENSE",
+        "blob": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+      }
+    },
+    {
+      "path": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "scope": "Pinned upstream license text",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "e988add20dab0fa97d7a76781c48961c8184288e",
+        "path": "LICENSE",
+        "blob": "48a2f6640b81ff8eca9ce7f6a96337692713ef5b",
+        "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+      }
+    },
+    {
+      "path": "LICENSES/Raroque-vibe-security-MIT.txt",
+      "scope": "Pinned upstream license text",
+      "sha256": "d43d0919779524481c37b181ac261af455284fc9504c497f3f3c30af67b19100",
+      "source": {
+        "repository": "raroque/vibe-security-skill",
+        "ref": "850938f20f6915e7c3688d85c0a838f7909c87bb",
+        "path": "LICENSE",
+        "blob": "1016709c49ae5852fa266d529b6b9b7173c51c49",
+        "sha256": "d43d0919779524481c37b181ac261af455284fc9504c497f3f3c30af67b19100"
+      }
+    },
+    {
+      "path": "LICENSES/Vercel-opensrc-Apache-2.0.txt",
+      "scope": "Pinned upstream license text",
+      "sha256": "014bb31e83d5c2e76aea1cc6e82217346ab41362f32cb355ad0f5c10aa0aeaff",
+      "source": {
+        "repository": "vercel-labs/opensrc",
+        "ref": "f96078ac0a7ce3fb7d058d73ce65ff4b6606d765",
+        "path": "LICENSE",
+        "blob": "8226d363f88a734e52cc79ead7a5588cc55e76f7",
+        "sha256": "014bb31e83d5c2e76aea1cc6e82217346ab41362f32cb355ad0f5c10aa0aeaff"
+      }
+    },
+    {
+      "path": "LICENSES/Shadcn-improve-MIT.txt",
+      "scope": "Pinned upstream license text",
+      "sha256": "00ff8408e93e2ecc4d90c0edeabdf434100c3aff50acc5d330e17eccd4a3faa5",
+      "source": {
+        "repository": "shadcn/improve",
+        "ref": "03369ee6d7cafbfcecc4346539b05b3dc0a603bb",
+        "path": "LICENSE.md",
+        "blob": "af4976ce11ba2e6599d815154b165af3e00b83fd",
+        "sha256": "00ff8408e93e2ecc4d90c0edeabdf434100c3aff50acc5d330e17eccd4a3faa5"
+      }
+    },
+    {
+      "path": "LICENSES/Teaonly-SKILL-mk-MIT.txt",
+      "scope": "Pinned upstream license text",
+      "sha256": "d9e9f071e65171c5944b93f91ec559431a6300dd2280645333069ae6f5999add",
+      "source": {
+        "repository": "Teaonly/SKILL.mk",
+        "ref": "9ed8bc9d8027c01b095cc8f069d6ab2f393b944b",
+        "path": "LICENSE",
+        "blob": "74d9de012a782742c38a42a6eef6d61bbd54f317",
+        "sha256": "d9e9f071e65171c5944b93f91ec559431a6300dd2280645333069ae6f5999add"
+      }
+    },
+    {
+      "path": "LICENSES/Earendil-pi-MIT.txt",
+      "scope": "Pinned upstream license text",
+      "sha256": "0457f5bcec3b3b211605dfb5d1a49042fd638f3686a410fe099c24a25af13c48",
+      "source": {
+        "repository": "earendil-works/pi",
+        "ref": "f119b01cb122ea55e17905caff62d4523f6cce1d",
+        "path": "LICENSE",
+        "blob": "b0a8e9b81083294360c69b4ec45d3d39a2b28197",
+        "sha256": "0457f5bcec3b3b211605dfb5d1a49042fd638f3686a410fe099c24a25af13c48"
+      }
+    }
+  ],
   "skills": [
     {
       "name": "agent-input-trust",
