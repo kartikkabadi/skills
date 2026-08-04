@@ -1,0 +1,1082 @@
+{
+  "schema_version": 1,
+  "repository": "kartikkabadi/skills",
+  "policy": {
+    "root_license_scope": "Only original material whose entry points to LICENSE.",
+    "third_party_rule": "Third-party and adapted skills retain their pinned upstream license and attribution.",
+    "restricted_rule": "Entries with redistribution=restricted must be excluded from public exports."
+  },
+  "skills": [
+    {
+      "name": "agent-input-trust",
+      "path": "agent-input-trust/SKILL.md",
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; produced with Hermes Agent and adapted for Codex",
+      "local_sha256": "aeb9f6f42bf8538745958152a5d23b79d88409e25f92840b5266d00ca41c30ed",
+      "modifications": "Original repository contribution.",
+      "source": null
+    },
+    {
+      "name": "agent-verification-discipline",
+      "path": "agent-verification-discipline/SKILL.md",
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; produced with Hermes Agent and adapted for Codex",
+      "local_sha256": "24e7491c96ad28d0d74a335a7511e2b76c40d4cd7e70c7010cf457bec263eaa5",
+      "modifications": "Original repository contribution.",
+      "source": null
+    },
+    {
+      "name": "agents-sdk",
+      "path": "agents-sdk/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "a05244d3cfb23330daff956ec28a990241f5dbbe489cd7fd6489c8f76bb60877",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "e96fbc77bcedab03c5f00378103d6453ca8dafc0",
+        "path": "skills/agents-sdk/SKILL.md",
+        "blob": "d9f1c8a9eaeb271888fb82ecda5d79ebf264944a",
+        "sha256": "a05244d3cfb23330daff956ec28a990241f5dbbe489cd7fd6489c8f76bb60877",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "brandkit",
+      "path": "brandkit/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "b0c4837e1bd140ca816ae54948754ddd2ac1e2a4d3619363777a80caf00b2ede",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "edb8d32401f5ecb444798fa630641e67462bd8c3",
+        "path": "skills/brandkit/SKILL.md",
+        "blob": "d76399f666af97ac8c142928e02602d9732e78aa",
+        "sha256": "b0c4837e1bd140ca816ae54948754ddd2ac1e2a4d3619363777a80caf00b2ede",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "caveman",
+      "path": "caveman/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Teaonly-SKILL-mk-MIT.txt",
+      "attribution": "Copyright (c) 2026 Zhou Chang",
+      "local_sha256": "b4bb6fe3bf3da222993ca0aee5e7c6f5368b182dd30ce1172e8f8e3280eb7052",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Teaonly/SKILL.mk",
+        "ref": "9ed8bc9d8027c01b095cc8f069d6ab2f393b944b",
+        "path": "examples/caveman/SKILL.md",
+        "blob": "85770a38992a7c74d2b3467b03fe5bd4b1287fe6",
+        "sha256": "b4bb6fe3bf3da222993ca0aee5e7c6f5368b182dd30ce1172e8f8e3280eb7052",
+        "license": "MIT",
+        "license_file": "LICENSES/Teaonly-SKILL-mk-MIT.txt"
+      }
+    },
+    {
+      "name": "clean-code",
+      "path": "clean-code/SKILL.md",
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; independently rewritten in 2026",
+      "local_sha256": "5a5179e44a3a7c9a5c04f04f99132e7c21be1ae18fb90aab0754c0d33b22943d",
+      "modifications": "Complete independent rewrite during the provenance audit.",
+      "source": null,
+      "notes": "The prior book-derived digest was replaced with independently written guidance; no book text is licensed through this repository."
+    },
+    {
+      "name": "cloudflare",
+      "path": "cloudflare/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "99be50a67ea1dbae086af3f2bac668c38dd57f71b25ed11f754827a7f206a89d",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "7c449def4e0c63daa27212d853094e4c8e37bbe8",
+        "path": "skills/cloudflare/SKILL.md",
+        "blob": "6d913f2d84b855dd910b6eceab3121ea7fe0f518",
+        "sha256": "99be50a67ea1dbae086af3f2bac668c38dd57f71b25ed11f754827a7f206a89d",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "cloudflare-email-service",
+      "path": "cloudflare-email-service/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "a62531900a08f9f6c352061d42e8b10a35009f5e1c6f91bbf18752feedad5a79",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "70c9cb7a211b1b6922712142e0daad4fadf9022b",
+        "path": "skills/cloudflare-email-service/SKILL.md",
+        "blob": "fb3565111a2ce94761e5ad6642d20d02e7707946",
+        "sha256": "a62531900a08f9f6c352061d42e8b10a35009f5e1c6f91bbf18752feedad5a79",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "cloudflare-one",
+      "path": "cloudflare-one/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "605336f84979367b6235a57da8ea43e4f3b856a97efd2c95d9e7f90e41bf17ec",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "e638d8c1be5f66f5e056c82b2e21ffa25db95e86",
+        "path": "skills/cloudflare-one/SKILL.md",
+        "blob": "753ab60c176e82f11097caa958cd4646ecd67078",
+        "sha256": "605336f84979367b6235a57da8ea43e4f3b856a97efd2c95d9e7f90e41bf17ec",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "design-taste-frontend",
+      "path": "design-taste-frontend/SKILL.md",
+      "classification": "third-party-adapted",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx; local adaptation by Kartik Kabadi",
+      "local_sha256": "a23a9e4e74a87e3f458d53cbff60adbc666e7a1e8633d43f9e213111e48f69b0",
+      "modifications": "Adapted frontmatter and wording for the local agent harness; not byte-identical.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "1bf6946082513a51c4a51296ef3afe99d68c491d",
+        "path": "skills/taste-skill-v1/SKILL.md",
+        "blob": "7d958c9029b8152ad25afcd86dab1a5d290aef21",
+        "sha256": "70b8cd16f4103017167fc30d613f049dbeab9df75ae93447e0623650fa7c84a9",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "diagnose",
+      "path": "diagnose/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "28886402bbfa0470248086eab9106a103b964b76ae9496e63ff0c8a6761b6d13",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "7afa86d3a5dd96edde06ffa014e16c64e733681e",
+        "path": "skills/engineering/diagnose/SKILL.md",
+        "blob": "ed55bda2fdb0d690ea3b80a1cf28bf848c5ad2b5",
+        "sha256": "28886402bbfa0470248086eab9106a103b964b76ae9496e63ff0c8a6761b6d13",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "durable-objects",
+      "path": "durable-objects/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "cd6797cb18f3ae8f721dfd2e5cb27b73a0aa8636683f1a38163dab2fd51a8dfb",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "d3113039790f64e052ff80f351190da65e9b7510",
+        "path": "skills/durable-objects/SKILL.md",
+        "blob": "b595f1c2182f3b7d6f944d7ba0ac59667fba78aa",
+        "sha256": "cd6797cb18f3ae8f721dfd2e5cb27b73a0aa8636683f1a38163dab2fd51a8dfb",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "edit-article",
+      "path": "edit-article/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "cc372fb25b552017765aa0dac1b108f77eaee4555d607041efc1ad5d8c995b4a",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "62f43a18177be6ec82da242e59ffbc490a4c22ea",
+        "path": "skills/personal/edit-article/SKILL.md",
+        "blob": "b319b7c6fb034ed3d085519dce70702601f174e9",
+        "sha256": "cc372fb25b552017765aa0dac1b108f77eaee4555d607041efc1ad5d8c995b4a",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "find-skills",
+      "path": "find-skills/SKILL.md",
+      "classification": "third-party-restricted",
+      "redistribution": "restricted",
+      "license": "NOASSERTION",
+      "license_file": null,
+      "attribution": "syahiidkamil / Software-Engineer-AI-Agent-Atlas contributors",
+      "local_sha256": "1e85f6f9686e145aca4a124e3b704b9bbea9aa87e08515c1e352eee70f6e6e7a",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "syahiidkamil/Software-Engineer-AI-Agent-Atlas",
+        "ref": "fc0bf112e01ad4b19834880fdcbf812a22273167",
+        "path": ".claude/skills/find-skills/SKILL.md",
+        "blob": "114c6637a18676ac99b8bd34ffc7c9da61d072cb",
+        "sha256": "1e85f6f9686e145aca4a124e3b704b9bbea9aa87e08515c1e352eee70f6e6e7a",
+        "license": "NOASSERTION",
+        "license_file": null
+      },
+      "notes": "The upstream repository declares no license. Keep for private internal use only; exclude from public exports until permission or an upstream license is obtained."
+    },
+    {
+      "name": "full-output-enforcement",
+      "path": "full-output-enforcement/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "e5bf48b1ae561511439cf71672209a10a88cee0968cc925909ff861dfa0a96a7",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "3206dd44fce91412cbfd5b2dbead29fb29a91bb9",
+        "path": "skills/output-skill/SKILL.md",
+        "blob": "d983bbcf040b6f433c624ce2212a2c044ad2da3c",
+        "sha256": "e5bf48b1ae561511439cf71672209a10a88cee0968cc925909ff861dfa0a96a7",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "git-branch-worktree-discipline",
+      "path": "git-branch-worktree-discipline/SKILL.md",
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; produced with Hermes Agent and adapted for Codex",
+      "local_sha256": "af3e229c513e3ffa9ebef6dc9cdfb16592ca4f88cd5bc6d834844e74428dfdd6",
+      "modifications": "Original repository contribution.",
+      "source": null
+    },
+    {
+      "name": "gpt-taste",
+      "path": "gpt-taste/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "2e64c269953f2656c21bf5a0fa6b4568e82fe0c72b36e8f84758e090349966a5",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "db754c6b5a154ffff386652d16659c6f5662b2e5",
+        "path": "skills/gpt-tasteskill/SKILL.md",
+        "blob": "03ed209b8fdc0a3cd6bccf8a5b3bfffe56aa4558",
+        "sha256": "2e64c269953f2656c21bf5a0fa6b4568e82fe0c72b36e8f84758e090349966a5",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "grill-me",
+      "path": "grill-me/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "74147eb6010a65957efef2b9e0f0b3ff935c1def7fc117697151b1d0f3610556",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "62f43a18177be6ec82da242e59ffbc490a4c22ea",
+        "path": "skills/productivity/grill-me/SKILL.md",
+        "blob": "bd04394c675ee54173a093c50eb74da01a2940fa",
+        "sha256": "74147eb6010a65957efef2b9e0f0b3ff935c1def7fc117697151b1d0f3610556",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "grill-with-docs",
+      "path": "grill-with-docs/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "3e35025119ba03efe7983dfdec3c8b96918142e3978512f3c2bf66d428310c7e",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "e74f0061bb67222181640effa98c675bdb2fdaa7",
+        "path": "skills/engineering/grill-with-docs/SKILL.md",
+        "blob": "5ea0aa913629bec683690f371839bd10e588413d",
+        "sha256": "3e35025119ba03efe7983dfdec3c8b96918142e3978512f3c2bf66d428310c7e",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "handoff",
+      "path": "handoff/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "d215dd8f2a19bf85fdaf67a3cdb5077641f6b4108f229ba79579414793d7b0a3",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "d54c497aa94400a496d3f2c38be10fa5f284c5a9",
+        "path": "skills/productivity/handoff/SKILL.md",
+        "blob": "0aa5b99300da27b50e80db53f880e422204faedd",
+        "sha256": "d215dd8f2a19bf85fdaf67a3cdb5077641f6b4108f229ba79579414793d7b0a3",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "high-end-visual-design",
+      "path": "high-end-visual-design/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "e1e32f5e2d420872c6c7332b53d5ff7721946766b78c4822b424c2d512c8fdbc",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "3206dd44fce91412cbfd5b2dbead29fb29a91bb9",
+        "path": "skills/soft-skill/SKILL.md",
+        "blob": "4038f41ec0137ec92e98ed0151fe3b7038b9329e",
+        "sha256": "e1e32f5e2d420872c6c7332b53d5ff7721946766b78c4822b424c2d512c8fdbc",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "how-to-code",
+      "path": "how-to-code/SKILL.md",
+      "classification": "original-adaptation",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; conceptual lineage credited to Mario Zechner and the pi contributors",
+      "local_sha256": "c9185bb4b21a7e9c0691815a4070911692477009607efbdf653c72dbb15f9a39",
+      "modifications": "Original skill text distilled from study of the pi codebase; not represented as a verbatim file import.",
+      "source": {
+        "repository": "earendil-works/pi",
+        "ref": "f119b01cb122ea55e17905caff62d4523f6cce1d",
+        "path": ".",
+        "blob": null,
+        "sha256": null,
+        "license": "MIT",
+        "license_file": "LICENSES/Earendil-pi-MIT.txt"
+      },
+      "notes": "The referenced pi repository is MIT-licensed; its preserved license is LICENSES/Earendil-pi-MIT.txt."
+    },
+    {
+      "name": "image-to-code",
+      "path": "image-to-code/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "4c060a8064a8b13380bc2ef3d6e6a1d0b1e316aa093cd9807d0ce9e4eeb037fa",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "c0f6c6ad3f49cbaea3d9053ab850e06b50490aaf",
+        "path": "skills/image-to-code-skill/SKILL.md",
+        "blob": "d19f8de112252ea88724c540647cad85b7653d46",
+        "sha256": "4c060a8064a8b13380bc2ef3d6e6a1d0b1e316aa093cd9807d0ce9e4eeb037fa",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "imagegen-frontend-mobile",
+      "path": "imagegen-frontend-mobile/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "8a33389979f3074fa0926678e266ad2eb9234624472254469fc1ad916b9caa24",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "edb8d32401f5ecb444798fa630641e67462bd8c3",
+        "path": "skills/imagegen-frontend-mobile/SKILL.md",
+        "blob": "9d8d55f3ca7a77e18329922ea8a67694dee52ebb",
+        "sha256": "8a33389979f3074fa0926678e266ad2eb9234624472254469fc1ad916b9caa24",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "imagegen-frontend-web",
+      "path": "imagegen-frontend-web/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "3f2bc0ed7c17b94855f3258ca9ab6b54bae877e55788f69c0409a40d7f1a8848",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "edb8d32401f5ecb444798fa630641e67462bd8c3",
+        "path": "skills/imagegen-frontend-web/SKILL.md",
+        "blob": "68356d558faf319fc762e53424a4e4db51c4e220",
+        "sha256": "3f2bc0ed7c17b94855f3258ca9ab6b54bae877e55788f69c0409a40d7f1a8848",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "improve",
+      "path": "improve/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Shadcn-improve-MIT.txt",
+      "attribution": "Copyright (c) 2026 shadcn",
+      "local_sha256": "6fec25022b25a049dbe5c18148e6eea9897150c2eeeeb39207732f949a3c797d",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "shadcn/improve",
+        "ref": "0c66862bd7bd5d12863e7f59d0f2c161f0913d8c",
+        "path": "skills/improve/SKILL.md",
+        "blob": "150568b9752cb4a2897a0e6fcadfb15f523c5687",
+        "sha256": "6fec25022b25a049dbe5c18148e6eea9897150c2eeeeb39207732f949a3c797d",
+        "license": "MIT",
+        "license_file": "LICENSES/Shadcn-improve-MIT.txt"
+      }
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "path": "improve-codebase-architecture/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "f00de04c7bb83cfd0ed1f97f3401a83838212c30856912ee44ba406649e6c749",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "a36584e09eaee067c425938fd66bc7ccddf089e2",
+        "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
+        "blob": "c12b263bed311d85cbcedcda7e36867eda541ddc",
+        "sha256": "f00de04c7bb83cfd0ed1f97f3401a83838212c30856912ee44ba406649e6c749",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "industrial-brutalist-ui",
+      "path": "industrial-brutalist-ui/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "fffbaac8597f07679e9d87145533567658aedba3b5eca6f16a7075a333048caa",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "3206dd44fce91412cbfd5b2dbead29fb29a91bb9",
+        "path": "skills/brutalist-skill/SKILL.md",
+        "blob": "f5375b908340e1376ed391232a31c5d82d5babfb",
+        "sha256": "fffbaac8597f07679e9d87145533567658aedba3b5eca6f16a7075a333048caa",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "path": "migrate-to-shoehorn/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "62f43a18177be6ec82da242e59ffbc490a4c22ea",
+        "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+        "blob": "ae4f965e204fc93cedbc4e2c306e92829d93f800",
+        "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "minimalist-ui",
+      "path": "minimalist-ui/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "36bc7328f085405f43b476938e62460fa573bf7e984e949e072bcf014831a44c",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "3206dd44fce91412cbfd5b2dbead29fb29a91bb9",
+        "path": "skills/minimalist-skill/SKILL.md",
+        "blob": "44ead27ef04ffe79ade0c6df7fd696dbcf7b246b",
+        "sha256": "36bc7328f085405f43b476938e62460fa573bf7e984e949e072bcf014831a44c",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "opensrc",
+      "path": "opensrc/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Vercel-opensrc-Apache-2.0.txt",
+      "attribution": "Vercel Labs opensrc contributors",
+      "local_sha256": "2c4d873a423e30dbdbabc30b104bef8f09eae00d9a186a952dfc88c53e2e34fb",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "vercel-labs/opensrc",
+        "ref": "f96078ac0a7ce3fb7d058d73ce65ff4b6606d765",
+        "path": "skills/opensrc/SKILL.md",
+        "blob": "2bde4af4e8ba8e26b6820d19a7826692d09314b2",
+        "sha256": "2c4d873a423e30dbdbabc30b104bef8f09eae00d9a186a952dfc88c53e2e34fb",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Vercel-opensrc-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "private-intelligence-reader",
+      "path": "private-intelligence-reader/SKILL.md",
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; produced with Hermes Agent and adapted for Codex",
+      "local_sha256": "a3ea53563da961c18986aa6c05451d38131ff9203c79e95ed8d41550b064d84e",
+      "modifications": "Original repository contribution.",
+      "source": null
+    },
+    {
+      "name": "prototype",
+      "path": "prototype/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "a653deb65afa2ee8f45c68f6ef4f593147171b386e994c8cccf89292d9ea9d75",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "f304057d61d3df3c9fd992ac2b6e3833cb9325fb",
+        "path": "skills/engineering/prototype/SKILL.md",
+        "blob": "64f3e61117b49c305e8d85b9c8543dcdfbb7d2c2",
+        "sha256": "a653deb65afa2ee8f45c68f6ef4f593147171b386e994c8cccf89292d9ea9d75",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "qa",
+      "path": "qa/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "d9727aac6503981bf69bdd8b37e0d85b32b8fbd353a57528c252dac1337ab761",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "62f43a18177be6ec82da242e59ffbc490a4c22ea",
+        "path": "skills/deprecated/qa/SKILL.md",
+        "blob": "305e43fbc1a171987fcab977ebd124c3f9792d39",
+        "sha256": "d9727aac6503981bf69bdd8b37e0d85b32b8fbd353a57528c252dac1337ab761",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "redesign-existing-projects",
+      "path": "redesign-existing-projects/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "98ad3e5b051bfb71b2795f7e8a6aa0d32b51ee095606c098a4b2822ac07926c9",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "3206dd44fce91412cbfd5b2dbead29fb29a91bb9",
+        "path": "skills/redesign-skill/SKILL.md",
+        "blob": "c8304f0c9301385e3641b052d6b25b8af11cb6c1",
+        "sha256": "98ad3e5b051bfb71b2795f7e8a6aa0d32b51ee095606c098a4b2822ac07926c9",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "repo-inspection",
+      "path": "repo-inspection/SKILL.md",
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; produced with Hermes Agent and adapted for Codex",
+      "local_sha256": "33e3ed96f23008633098600d0a3ab6f1416a7e4fe0a5790d776fa89117a87858",
+      "modifications": "Original repository contribution.",
+      "source": null
+    },
+    {
+      "name": "review",
+      "path": "review/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "5700f30d3f06706ee56c099adceec222fef26dbcf82817ff604962634e246b2e",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "9fecab929abb904c68ce3366a1781df31ab22832",
+        "path": "skills/in-progress/review/SKILL.md",
+        "blob": "7507a362147167c277b17ec5abf8bedb99fc42d5",
+        "sha256": "5700f30d3f06706ee56c099adceec222fef26dbcf82817ff604962634e246b2e",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "sandbox-sdk",
+      "path": "sandbox-sdk/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "0f3501e6510921401be3f54bcb24d2a432a1b5c63af8f719eded3a087ad88ea9",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "d3113039790f64e052ff80f351190da65e9b7510",
+        "path": "skills/sandbox-sdk/SKILL.md",
+        "blob": "2e7e0c38772df151e186373dab43f09a5e9c18fc",
+        "sha256": "0f3501e6510921401be3f54bcb24d2a432a1b5c63af8f719eded3a087ad88ea9",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "scaffold-exercises",
+      "path": "scaffold-exercises/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "62f43a18177be6ec82da242e59ffbc490a4c22ea",
+        "path": "skills/misc/scaffold-exercises/SKILL.md",
+        "blob": "d87df28e7d8abb4e57ecc6e47d71c274d16054c7",
+        "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "setup-pre-commit",
+      "path": "setup-pre-commit/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "872f4037cb7e6e0e340d4175c086550072959925dffc87b160d1a30dc9f63bbd",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "62f43a18177be6ec82da242e59ffbc490a4c22ea",
+        "path": "skills/misc/setup-pre-commit/SKILL.md",
+        "blob": "395a77b5f7e33911092f7bc86e7d87c4ca70d189",
+        "sha256": "872f4037cb7e6e0e340d4175c086550072959925dffc87b160d1a30dc9f63bbd",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "stitch-design-taste",
+      "path": "stitch-design-taste/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt",
+      "attribution": "Copyright (c) 2026 Leonxlnx",
+      "local_sha256": "1cd55cf8643f3828bc9a3aaadb5da97ee28f98f745b7071d7e217ffeab92fd2a",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "Leonxlnx/taste-skill",
+        "ref": "3206dd44fce91412cbfd5b2dbead29fb29a91bb9",
+        "path": "skills/stitch-skill/SKILL.md",
+        "blob": "56e1266f56d1b681c8baaeb09eb4022a89b2e336",
+        "sha256": "1cd55cf8643f3828bc9a3aaadb5da97ee28f98f745b7071d7e217ffeab92fd2a",
+        "license": "MIT",
+        "license_file": "LICENSES/Leonxlnx-taste-skill-MIT.txt"
+      }
+    },
+    {
+      "name": "supply-chain-install-protection",
+      "path": "supply-chain-install-protection/SKILL.md",
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; produced with Hermes Agent and adapted for Codex",
+      "local_sha256": "27990701465f7ad076cc3c412853e729e2ad082b6544d82acc097d1d889bec9c",
+      "modifications": "Original repository contribution.",
+      "source": null
+    },
+    {
+      "name": "tdd",
+      "path": "tdd/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "af059705061156fd4845ddbb736fe92b564118ac5f03551e09ef9e8f6d970638",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "7afa86d3a5dd96edde06ffa014e16c64e733681e",
+        "path": "skills/engineering/tdd/SKILL.md",
+        "blob": "7a989411eb3c4d0879cb33b2d7d05831add27b84",
+        "sha256": "af059705061156fd4845ddbb736fe92b564118ac5f03551e09ef9e8f6d970638",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "telephony-product-architecture",
+      "path": "telephony-product-architecture/SKILL.md",
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; produced with Hermes Agent and adapted for Codex",
+      "local_sha256": "b01addde2a9dad8a84e31a5b5a640910f873d86a6a835aa2b312a3a3928a7842",
+      "modifications": "Original repository contribution.",
+      "source": null
+    },
+    {
+      "name": "to-issues",
+      "path": "to-issues/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "0e6a2973fa5bdf32570227c578f7e474d945dd9281615d31439664c3ef016fce",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "ff3ee1dda50d636b4e25b1ba269d25d6d5784164",
+        "path": "skills/engineering/to-issues/SKILL.md",
+        "blob": "9f6efbfe5fb5fcb9a751482e333d2f54da173102",
+        "sha256": "0e6a2973fa5bdf32570227c578f7e474d945dd9281615d31439664c3ef016fce",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "to-prd",
+      "path": "to-prd/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "5212dee3af6a95e60d7daaedac08f15f2789b170468d57d23f722e516a255269",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "aaf2453fbdfe7a15c07f11d861224f34ab4b53cb",
+        "path": "skills/engineering/to-prd/SKILL.md",
+        "blob": "ee758fdc34a9102caac95623b2dc07aea86e297e",
+        "sha256": "5212dee3af6a95e60d7daaedac08f15f2789b170468d57d23f722e516a255269",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "triage",
+      "path": "triage/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "b819f0285e4e5814ac6472d0217f07dc9f23d2fdae3ebb0dd31d98360d8ac029",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "179a14e721034706ffce7abae75b877c922b4ae8",
+        "path": "skills/engineering/triage/SKILL.md",
+        "blob": "3dee68f977ebab5d25a421f9d1f9ac1b56e0b7d7",
+        "sha256": "b819f0285e4e5814ac6472d0217f07dc9f23d2fdae3ebb0dd31d98360d8ac029",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "turnstile-spin",
+      "path": "turnstile-spin/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "29e762d6c2be595910b219ba204490b35eba309a926fb3228c2ae52d5a2203be",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "8525237735b0ba2eef520743a956d16c88d07799",
+        "path": "skills/turnstile-spin/SKILL.md",
+        "blob": "6a1d5dd441430807364e7815bda285ff53d39d06",
+        "sha256": "29e762d6c2be595910b219ba204490b35eba309a926fb3228c2ae52d5a2203be",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "unit-economics-analysis",
+      "path": "unit-economics-analysis/SKILL.md",
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; produced with Hermes Agent and adapted for Codex",
+      "local_sha256": "b061703d50da47c9b1c88d1854d6fd8079760368888c1909a0e9e94061f5931b",
+      "modifications": "Original repository contribution.",
+      "source": null
+    },
+    {
+      "name": "vibe-security",
+      "path": "vibe-security/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Raroque-vibe-security-MIT.txt",
+      "attribution": "Copyright (c) 2025 Chris Raroque",
+      "local_sha256": "f68c3f16effd69264f9836c511339e31469e89e6bad37f313c30f4626bd05143",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "raroque/vibe-security-skill",
+        "ref": "850938f20f6915e7c3688d85c0a838f7909c87bb",
+        "path": "vibe-security/SKILL.md",
+        "blob": "4baed3514d42afb147967a003e2f544c8917f2f6",
+        "sha256": "f68c3f16effd69264f9836c511339e31469e89e6bad37f313c30f4626bd05143",
+        "license": "MIT",
+        "license_file": "LICENSES/Raroque-vibe-security-MIT.txt"
+      }
+    },
+    {
+      "name": "web-perf",
+      "path": "web-perf/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "94c5cb37766676a8321a82861d2ac1072d3dd0ef612f0c946792014ad48fb0c2",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "22a32f5f10eedd4428b26597406804ddf43b747d",
+        "path": "skills/web-perf/SKILL.md",
+        "blob": "0fb166e8e8cb12e42dff4a40905ee4d3d626fcda",
+        "sha256": "94c5cb37766676a8321a82861d2ac1072d3dd0ef612f0c946792014ad48fb0c2",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "workers-best-practices",
+      "path": "workers-best-practices/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "099432ff265ff6080327ef0b392c118b835d2a5bda98a7de07e1afd115ed6458",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0",
+        "path": "skills/workers-best-practices/SKILL.md",
+        "blob": "bebd018cdcae1771eacdee30cfb96af3ad3bd936",
+        "sha256": "099432ff265ff6080327ef0b392c118b835d2a5bda98a7de07e1afd115ed6458",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "wrangler",
+      "path": "wrangler/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "Apache-2.0",
+      "license_file": "LICENSES/Cloudflare-Apache-2.0.txt",
+      "attribution": "Cloudflare skills contributors",
+      "local_sha256": "42abe11ba6c0cb0c135deed1d591d844838fe0b61fc8c6d675a832435508a61b",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "cloudflare/skills",
+        "ref": "8c01b03b0a09a01581beed87b656cf634009e735",
+        "path": "skills/wrangler/SKILL.md",
+        "blob": "07d4dbbee98b6a55db42a2a01cb2c84df864a8e6",
+        "sha256": "42abe11ba6c0cb0c135deed1d591d844838fe0b61fc8c6d675a832435508a61b",
+        "license": "Apache-2.0",
+        "license_file": "LICENSES/Cloudflare-Apache-2.0.txt"
+      }
+    },
+    {
+      "name": "write-a-skill",
+      "path": "write-a-skill/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "be8f20e66309258034b82a7db5040b03798aa40546f9d387662c2bd86be23123",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "62f43a18177be6ec82da242e59ffbc490a4c22ea",
+        "path": "skills/productivity/write-a-skill/SKILL.md",
+        "blob": "7339c8a38d6c2e1ee5fd721327bca3441a9408be",
+        "sha256": "be8f20e66309258034b82a7db5040b03798aa40546f9d387662c2bd86be23123",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "writing-beats",
+      "path": "writing-beats/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "0843367d0a653bb17e61b3771d0ec08fa463663bc0ab6f3f421141b2687c4429",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+        "path": "skills/in-progress/writing-beats/SKILL.md",
+        "blob": "419d11fe13cf72bd1b5ef2dc6356ebdd3c9803c4",
+        "sha256": "0843367d0a653bb17e61b3771d0ec08fa463663bc0ab6f3f421141b2687c4429",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "writing-fragments",
+      "path": "writing-fragments/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "4ffa34a701caff27da54b9e073fef48471f0ccafee009d404c22ae542d0e8dea",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+        "path": "skills/in-progress/writing-fragments/SKILL.md",
+        "blob": "5514eaae3d941246561e43fa05e5cd52160b676b",
+        "sha256": "4ffa34a701caff27da54b9e073fef48471f0ccafee009d404c22ae542d0e8dea",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    },
+    {
+      "name": "writing-shape",
+      "path": "writing-shape/SKILL.md",
+      "classification": "third-party-exact",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSES/Matt-Pocock-MIT.txt",
+      "attribution": "Copyright (c) 2026 Matt Pocock",
+      "local_sha256": "81a542b95fa865325835bf5ec7644a98e657c1e0f3374c56cb9f3b42b374660f",
+      "modifications": "None; byte-identical to the pinned source file.",
+      "source": {
+        "repository": "mattpocock/skills",
+        "ref": "ff3ee1dda50d636b4e25b1ba269d25d6d5784164",
+        "path": "skills/in-progress/writing-shape/SKILL.md",
+        "blob": "7dea05702bfe6d9a26164cfecbf18b4c3c58442b",
+        "sha256": "81a542b95fa865325835bf5ec7644a98e657c1e0f3374c56cb9f3b42b374660f",
+        "license": "MIT",
+        "license_file": "LICENSES/Matt-Pocock-MIT.txt"
+      }
+    }
+  ]
+}
