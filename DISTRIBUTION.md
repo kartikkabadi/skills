@@ -25,9 +25,9 @@ Do not describe the complete collection as MIT. The root MIT license covers only
 
 A skill with `redistribution: restricted` is for private internal use only. It must be excluded from every public export unless its copyright holder grants permission or the upstream project publishes a license that permits redistribution.
 
-Current restricted entry:
+Current restricted entries: **none**.
 
-- `find-skills` — exact upstream file, but the upstream repository declares no license (`NOASSERTION`)
+The previous unlicensed `find-skills` copy was replaced with independently written material. The restriction mechanism remains mandatory for any future entry whose permission is missing or unclear.
 
 Do not infer permission from public GitHub visibility, popularity, installation tooling, or copies in third-party registries.
 
@@ -60,6 +60,6 @@ Frontmatter fields such as `author` and `license` are useful metadata but are no
 
 ## Private installation
 
-Because the repository itself is private, Kartik may retain restricted material for internal use. A private installation may copy all skill directories, but it must not be republished wholesale.
+A private installation may copy all current skill directories. If a future restricted entry is added, it may be retained only for the specifically authorized internal use recorded in its provenance entry and must not be republished.
 
-Public distribution must use the manifest-controlled export path and exclude every restricted entry.
+Public distribution must use the manifest-controlled export path. The exporter includes all currently allowed entries and will exclude any future restricted entry automatically.

@@ -122,17 +122,6 @@ This repository is a mixed-provenance collection. The root `LICENSE` applies onl
 |---|---|---|---|
 | `improve` | `third-party-exact` | `0c66862bd7bd5d12863e7f59d0f2c161f0913d8c` · `skills/improve/SKILL.md` | None; byte-identical to the pinned source file. |
 
-### `syahiidkamil/Software-Engineer-AI-Agent-Atlas`
-
-- License: `NOASSERTION`
-- Preserved license text: none available upstream
-- Skills: `find-skills`
-- Redistribution: **restricted** for 1 entry
-
-| Skill | Classification | Pinned source | Modifications |
-|---|---|---|---|
-| `find-skills` | `third-party-restricted` | `fc0bf112e01ad4b19834880fdcbf812a22273167` · `.claude/skills/find-skills/SKILL.md` | None; byte-identical to the pinned source file. |
-
 ### `vercel-labs/opensrc`
 
 - License: `Apache-2.0`
@@ -144,12 +133,6 @@ This repository is a mixed-provenance collection. The root `LICENSE` applies onl
 |---|---|---|---|
 | `opensrc` | `third-party-exact` | `f96078ac0a7ce3fb7d058d73ce65ff4b6606d765` · `skills/opensrc/SKILL.md` | None; byte-identical to the pinned source file. |
 
-## Restricted material
-
-`find-skills` is byte-identical to a file in `syahiidkamil/Software-Engineer-AI-Agent-Atlas`, but that upstream repository declares no license. It is retained only because this repository is private. It must not be included in a public mirror, package, archive, or release unless the copyright holder grants permission or the upstream project adopts a license.
-
-No license in this repository grants redistribution rights for that entry.
-
 ## Original and locally authored material
 
 The following entries are covered by the root MIT license:
@@ -157,6 +140,7 @@ The following entries are covered by the root MIT license:
 - `agent-input-trust` — Kartik Kabadi; produced with Hermes Agent and adapted for Codex
 - `agent-verification-discipline` — Kartik Kabadi; produced with Hermes Agent and adapted for Codex
 - `clean-code` — Kartik Kabadi; independently rewritten in 2026
+- `find-skills` — Kartik Kabadi; independently rewritten in 2026
 - `git-branch-worktree-discipline` — Kartik Kabadi; produced with Hermes Agent and adapted for Codex
 - `how-to-code` — Kartik Kabadi; conceptual lineage credited to Mario Zechner and the pi contributors
 - `private-intelligence-reader` — Kartik Kabadi; produced with Hermes Agent and adapted for Codex
@@ -168,6 +152,8 @@ The following entries are covered by the root MIT license:
 `how-to-code` is original skill text with explicit conceptual lineage to Mario Zechner and the MIT-licensed `earendil-works/pi` project. The pi license is preserved at `LICENSES/Earendil-pi-MIT.txt`.
 
 `clean-code` was independently rewritten during the provenance audit. The previous book-derived digest and its direct quotations are not licensed or redistributed by the current file.
+
+`find-skills` was independently rewritten during the provenance audit. The previous unlicensed upstream copy is not licensed or redistributed by the current file.
 
 ## Source of truth
 
