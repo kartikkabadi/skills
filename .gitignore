@@ -6,3 +6,10 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Python tooling
+__pycache__/
+*.py[cod]
+
+# Generated public exports
+dist/
