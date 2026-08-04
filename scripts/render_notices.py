@@ -129,6 +129,13 @@ def render(manifest: dict[str, Any]) -> str:
                 "",
             ]
         )
+    if "find-skills" in names:
+        lines.extend(
+            [
+                "`find-skills` was independently rewritten during the provenance audit. The previous unlicensed upstream copy is not licensed or redistributed by the current file.",
+                "",
+            ]
+        )
     lines.extend(
         [
             "## Source of truth",

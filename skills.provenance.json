@@ -351,23 +351,15 @@
     {
       "name": "find-skills",
       "path": "find-skills/SKILL.md",
-      "classification": "third-party-restricted",
-      "redistribution": "restricted",
-      "license": "NOASSERTION",
-      "license_file": null,
-      "attribution": "syahiidkamil / Software-Engineer-AI-Agent-Atlas contributors",
-      "local_sha256": "1e85f6f9686e145aca4a124e3b704b9bbea9aa87e08515c1e352eee70f6e6e7a",
-      "modifications": "None; byte-identical to the pinned source file.",
-      "source": {
-        "repository": "syahiidkamil/Software-Engineer-AI-Agent-Atlas",
-        "ref": "fc0bf112e01ad4b19834880fdcbf812a22273167",
-        "path": ".claude/skills/find-skills/SKILL.md",
-        "blob": "114c6637a18676ac99b8bd34ffc7c9da61d072cb",
-        "sha256": "1e85f6f9686e145aca4a124e3b704b9bbea9aa87e08515c1e352eee70f6e6e7a",
-        "license": "NOASSERTION",
-        "license_file": null
-      },
-      "notes": "The upstream repository declares no license. Keep for private internal use only; exclude from public exports until permission or an upstream license is obtained."
+      "classification": "original",
+      "redistribution": "allowed",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "attribution": "Kartik Kabadi; independently rewritten in 2026",
+      "local_sha256": "f39a4ada65bd243600fbf4da8a8cf4e76cb40513a216725589fa7946ad536ded",
+      "modifications": "Complete independent rewrite during the provenance audit.",
+      "source": null,
+      "notes": "The prior unlicensed upstream copy was replaced with independently written guidance; no upstream text is redistributed by the current file."
     },
     {
       "name": "full-output-enforcement",

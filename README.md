@@ -103,7 +103,7 @@ Skills are structured prompts that load domain-specific expertise into an AI age
 ### Meta
 | Skill | Description |
 |-------|-------------|
-| `find-skills` | Discover available agent skills (restricted internal-only) |
+| `find-skills` | Locate, evaluate, and safely install agent skills |
 | `write-a-skill` | Create new skill definitions |
 | `private-intelligence-reader` | Build personal intelligence readers |
 
@@ -122,7 +122,7 @@ for skill_file in */SKILL.md; do
 done
 ```
 
-This includes the restricted internal-only skill. Do not publish or mirror the resulting directory wholesale. Public exports must follow [`DISTRIBUTION.md`](DISTRIBUTION.md) and exclude every manifest entry marked `restricted`.
+This installs the complete current collection for private use. Before publishing or mirroring it, follow [`DISTRIBUTION.md`](DISTRIBUTION.md) and run the provenance-controlled public export.
 
 ### Safe public export
 
@@ -132,7 +132,7 @@ python3 scripts/verify_upstream.py
 python3 scripts/export_public.py ./dist/public-skills
 ```
 
-The exporter creates a self-contained 56-skill collection with the filtered provenance manifest, required upstream license texts, and generated notices. It refuses to include restricted entries.
+The exporter creates a self-contained 57-skill collection with the filtered provenance manifest, required upstream license texts, and generated notices. It includes every current skill and will automatically exclude any future entry marked restricted.
 
 ### Direct loading
 Skills are designed to be referenced by name. When you ask an agent to do something matching a skill's domain, reference the skill:
@@ -157,4 +157,4 @@ The root [`LICENSE`](LICENSE) is MIT and applies only to original material ident
 
 Imported and adapted skills retain their pinned upstream licenses and attribution. Exact upstream license texts are preserved in [`LICENSES/`](LICENSES/), with a readable summary in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
-`find-skills` is retained for private internal use but is **not redistributable from this repository** because its upstream source declares no license.
+All 57 current skills are redistributable under the licenses recorded in the manifest. The distribution policy still requires future entries with unclear or missing permission to be marked restricted and excluded from public exports.

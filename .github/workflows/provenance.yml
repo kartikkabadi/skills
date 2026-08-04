@@ -44,8 +44,8 @@ jobs:
           python3 scripts/export_public.py "$export_root"
           python3 scripts/verify_provenance.py --root "$export_root"
           python3 scripts/render_notices.py --root "$export_root" --check
-          test ! -e "$export_root/find-skills"
-          test "$(find "$export_root" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq 56
+          test -e "$export_root/find-skills/SKILL.md"
+          test "$(find "$export_root" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq 57
 
       - name: Prove tampering is detected
         shell: bash

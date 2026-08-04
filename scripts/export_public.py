@@ -47,7 +47,7 @@ def public_readme(manifest: dict) -> str:
         "",
         f"This export contains {len(entries)} skills whose provenance records permit redistribution.",
         "",
-        "It was generated from `kartikkabadi/skills` using `scripts/export_public.py`. Restricted internal-only entries were excluded. The collection is mixed-provenance; do not treat every skill as Kartik-authored or as covered by one blanket license.",
+        "It was generated from `kartikkabadi/skills` using `scripts/export_public.py`. Only manifest entries marked `allowed` are included. The collection is mixed-provenance; do not treat every skill as Kartik-authored or as covered by one blanket license.",
         "",
         "See:",
         "",
@@ -100,9 +100,6 @@ def prepare_output(output: Path, force: bool) -> None:
 def build_export(root: Path, destination: Path, manifest: dict) -> tuple[int, list[str]]:
     allowed = [entry for entry in manifest["skills"] if entry["redistribution"] == "allowed"]
     restricted = [entry for entry in manifest["skills"] if entry["redistribution"] != "allowed"]
-    if not restricted:
-        print("warning: manifest contains no restricted entries", file=sys.stderr)
-
     referenced_licenses = {"LICENSE"}
     for entry in allowed:
         if entry.get("license_file"):
@@ -202,9 +199,8 @@ def main() -> int:
         print(f"export failed: {exc}", file=sys.stderr)
         return 1
 
-    print(
-        f"exported {included} skills to {output}; excluded: " + ", ".join(excluded)
-    )
+    excluded_text = ", ".join(excluded) if excluded else "none"
+    print(f"exported {included} skills to {output}; excluded: {excluded_text}")
     return 0
 
 
