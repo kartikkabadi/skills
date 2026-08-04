@@ -8,11 +8,12 @@ import hashlib
 import json
 import re
 import sys
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any
 
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
+SKILL_NAME = re.compile(r"^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$")
 CLASSIFICATIONS = {
     "original",
     "original-adaptation",
@@ -43,6 +44,35 @@ def require_string(errors: list[str], value: Any, label: str) -> bool:
         errors.append(f"{label} must be a non-empty string")
         return False
     return True
+
+
+def require_safe_relative_path(errors: list[str], value: Any, label: str) -> bool:
+    if not require_string(errors, value, label):
+        return False
+    path = PurePosixPath(value)
+    if path.is_absolute() or ".." in path.parts or value.startswith("./"):
+        errors.append(f"{label} must be a normalized relative path without traversal")
+        return False
+    return True
+
+
+def verify_local_file(errors: list[str], root: Path, relative: str, label: str) -> Path | None:
+    path = root / relative
+    if path.is_symlink() or path.parent.is_symlink():
+        errors.append(f"{label} must not be a symlink: {relative}")
+        return None
+    try:
+        resolved = path.resolve(strict=True)
+    except FileNotFoundError:
+        errors.append(f"missing {label}: {relative}")
+        return None
+    if root != resolved and root not in resolved.parents:
+        errors.append(f"{label} escapes the verification root: {relative}")
+        return None
+    if not resolved.is_file():
+        errors.append(f"{label} is not a regular file: {relative}")
+        return None
+    return resolved
 
 
 def verify_source(
@@ -113,21 +143,23 @@ def main() -> int:
         license_records = []
 
     license_paths: set[str] = set()
+    license_record_by_path: dict[str, dict[str, Any]] = {}
     for index, record in enumerate(license_records):
         label = f"license_files[{index}]"
         if not isinstance(record, dict):
             errors.append(f"{label} must be an object")
             continue
         path_value = record.get("path")
-        if not require_string(errors, path_value, f"{label}.path"):
+        if not require_safe_relative_path(errors, path_value, f"{label}.path"):
             continue
+        if path_value != "LICENSE" and not path_value.startswith("LICENSES/"):
+            errors.append(f"{label}.path must be LICENSE or a file under LICENSES/")
         if path_value in license_paths:
             errors.append(f"duplicate license file record: {path_value}")
         license_paths.add(path_value)
-        path = root / path_value
-        if not path.is_file():
-            errors.append(f"missing license file: {path_value}")
-        else:
+        license_record_by_path[path_value] = record
+        path = verify_local_file(errors, root, path_value, "license file")
+        if path is not None:
             actual_hash = digest(path)
             expected_hash = record.get("sha256")
             if actual_hash != expected_hash:
@@ -150,11 +182,12 @@ def main() -> int:
             if isinstance(source, dict) and source.get("sha256") != record.get("sha256"):
                 errors.append(f"{label}.source.sha256 must equal the preserved local license hash")
 
-    actual_license_files = {
-        str(path.relative_to(root))
-        for path in (root / "LICENSES").glob("*")
-        if path.is_file()
-    }
+    actual_license_files = set()
+    for path in (root / "LICENSES").glob("*"):
+        if path.is_symlink():
+            errors.append(f"LICENSES/ must not contain symlinks: {path.name}")
+        elif path.is_file():
+            actual_license_files.add(str(path.relative_to(root)))
     expected_license_files = {path for path in license_paths if path.startswith("LICENSES/")}
     if actual_license_files != expected_license_files:
         missing = sorted(expected_license_files - actual_license_files)
@@ -182,7 +215,11 @@ def main() -> int:
         if not require_string(errors, name, f"{label}.name"):
             continue
         names.append(name)
+        if not SKILL_NAME.fullmatch(name):
+            errors.append(f"{label}.name must use lowercase letters, digits, and internal hyphens")
         expected_path = f"{name}/SKILL.md"
+        if not require_safe_relative_path(errors, path_value, f"{label}.path"):
+            continue
         if path_value != expected_path:
             errors.append(f"{label}.path must equal {expected_path!r}")
             continue
@@ -204,9 +241,12 @@ def main() -> int:
         require_string(errors, item.get("attribution"), f"{label}.attribution")
         require_string(errors, item.get("modifications"), f"{label}.modifications")
 
-        skill_path = root / path_value
-        if not skill_path.is_file():
-            errors.append(f"missing skill file: {path_value}")
+        skill_dir = root / name
+        if skill_dir.is_symlink():
+            errors.append(f"skill directory must not be a symlink: {name}")
+            continue
+        skill_path = verify_local_file(errors, root, path_value, "skill file")
+        if skill_path is None:
             continue
         actual_hash = digest(skill_path)
         expected_hash = item.get("local_sha256")
@@ -248,18 +288,36 @@ def main() -> int:
                     errors.append(
                         f"{label}.source.license_file is not preserved locally: {source_license_file!r}"
                     )
+                else:
+                    license_source = license_record_by_path[source_license_file].get("source")
+                    if not isinstance(license_source, dict) or license_source.get("repository") != source.get("repository"):
+                        errors.append(
+                            f"{label}.source.license_file must be pinned from the same upstream repository"
+                        )
         elif classification == "third-party-exact":
             if license_file == "LICENSE":
                 errors.append(f"{label} exact third-party imports cannot use the root LICENSE")
             verify_source(errors, source, label, require_blob=True, require_hash=True)
-            if isinstance(source, dict) and source.get("sha256") != actual_hash:
-                errors.append(f"{label} exact import source hash must equal the local skill hash")
+            if isinstance(source, dict):
+                if source.get("sha256") != actual_hash:
+                    errors.append(f"{label} exact import source hash must equal the local skill hash")
+                if source.get("license") != license_id or source.get("license_file") != license_file:
+                    errors.append(f"{label} must preserve the same upstream license and license_file")
+                license_source = license_record_by_path.get(license_file, {}).get("source")
+                if not isinstance(license_source, dict) or license_source.get("repository") != source.get("repository"):
+                    errors.append(f"{label}.license_file must be pinned from the same upstream repository")
         elif classification == "third-party-adapted":
             if license_file == "LICENSE":
                 errors.append(f"{label} adapted third-party imports cannot use the root LICENSE")
             verify_source(errors, source, label, require_blob=True, require_hash=True)
-            if isinstance(source, dict) and source.get("sha256") == actual_hash:
-                errors.append(f"{label} adapted import must not be byte-identical to its source")
+            if isinstance(source, dict):
+                if source.get("sha256") == actual_hash:
+                    errors.append(f"{label} adapted import must not be byte-identical to its source")
+                if source.get("license") != license_id or source.get("license_file") != license_file:
+                    errors.append(f"{label} must preserve the same upstream license and license_file")
+                license_source = license_record_by_path.get(license_file, {}).get("source")
+                if not isinstance(license_source, dict) or license_source.get("repository") != source.get("repository"):
+                    errors.append(f"{label}.license_file must be pinned from the same upstream repository")
         elif classification == "third-party-restricted":
             verify_source(errors, source, label, require_blob=True, require_hash=True)
             if isinstance(source, dict):
@@ -289,8 +347,7 @@ def main() -> int:
             errors.append(f"manifest paths missing from disk: {missing}")
 
     for required in ("LICENSE", "THIRD_PARTY_NOTICES.md", "DISTRIBUTION.md"):
-        if not (root / required).is_file():
-            errors.append(f"missing required legal file: {required}")
+        verify_local_file(errors, root, required, "required legal file")
 
     if errors:
         print("provenance verification failed:", file=sys.stderr)

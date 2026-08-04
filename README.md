@@ -128,6 +128,7 @@ This includes the restricted internal-only skill. Do not publish or mirror the r
 
 ```bash
 python3 scripts/verify_provenance.py
+python3 scripts/verify_upstream.py
 python3 scripts/export_public.py ./dist/public-skills
 ```
 

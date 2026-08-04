@@ -113,13 +113,24 @@ def render(manifest: dict[str, Any]) -> str:
     for item in original:
         lines.append(f"- `{item['name']}` — {item['attribution']}")
 
+    lines.append("")
+    names = {item["name"] for item in entries}
+    if "how-to-code" in names:
+        lines.extend(
+            [
+                "`how-to-code` is original skill text with explicit conceptual lineage to Mario Zechner and the MIT-licensed `earendil-works/pi` project. The pi license is preserved at `LICENSES/Earendil-pi-MIT.txt`.",
+                "",
+            ]
+        )
+    if "clean-code" in names:
+        lines.extend(
+            [
+                "`clean-code` was independently rewritten during the provenance audit. The previous book-derived digest and its direct quotations are not licensed or redistributed by the current file.",
+                "",
+            ]
+        )
     lines.extend(
         [
-            "",
-            "`how-to-code` is original skill text with explicit conceptual lineage to Mario Zechner and the MIT-licensed `earendil-works/pi` project. The pi license is preserved at `LICENSES/Earendil-pi-MIT.txt`.",
-            "",
-            "`clean-code` was independently rewritten during the provenance audit. The previous book-derived digest and its direct quotations are not licensed or redistributed by the current file.",
-            "",
             "## Source of truth",
             "",
             "When this document and a per-skill frontmatter field differ, use `skills.provenance.json` and the preserved upstream license text. Frontmatter is operational metadata and is not sufficient proof of ownership or permission.",

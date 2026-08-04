@@ -68,6 +68,7 @@ Create and verify a public export with:
 
 ```bash
 python3 scripts/verify_provenance.py
+python3 scripts/verify_upstream.py
 python3 scripts/render_notices.py --check
 python3 scripts/export_public.py ./dist/public-skills
 python3 scripts/verify_provenance.py --root ./dist/public-skills
