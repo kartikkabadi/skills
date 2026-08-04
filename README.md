@@ -1,6 +1,8 @@
 # Agent Skills
 
-A curated collection of reusable skill definitions for AI coding agents. Each skill is a `SKILL.md` file that teaches an agent a specific capability — from design taste to cloud infrastructure to secure coding practices.
+A curated collection of 57 reusable skill definitions for AI coding agents. Each skill is a `SKILL.md` file that teaches an agent a specific capability — from design taste to cloud infrastructure to secure coding practices.
+
+This is a **mixed-provenance collection**: some skills are Kartik's original work, while others are exact or adapted imports preserved under their upstream licenses. The repository is not licensed as one blanket MIT work. See [`skills.provenance.json`](skills.provenance.json), [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md), and [`DISTRIBUTION.md`](DISTRIBUTION.md).
 
 ## What are skills?
 
@@ -11,7 +13,7 @@ Skills are structured prompts that load domain-specific expertise into an AI age
 ### Development Practices
 | Skill | Description |
 |-------|-------------|
-| `clean-code` | Robert C. Martin's Clean Code as enforceable rules |
+| `clean-code` | Original practical clean-code rules for maintainable software |
 | `diagnose` | Disciplined diagnosis loop for hard bugs and regressions |
 | `tdd` | Test-driven development with red-green-refactor |
 | `how-to-code` | Prerequisite thinking discipline before coding |
@@ -82,7 +84,6 @@ Skills are structured prompts that load domain-specific expertise into an AI age
 |-------|-------------|
 | `supply-chain-install-protection` | Package manager supply chain security |
 | `vibe-security` | Audit vibe-coded applications |
-| `git-guardrails-claude-code` | Git safety hooks for Claude Code |
 | `git-branch-worktree-discipline` | Safe git branch/worktree workflows |
 
 ### DevOps & Workflow
@@ -102,7 +103,7 @@ Skills are structured prompts that load domain-specific expertise into an AI age
 ### Meta
 | Skill | Description |
 |-------|-------------|
-| `find-skills` | Discover available agent skills |
+| `find-skills` | Locate, evaluate, and safely install agent skills |
 | `write-a-skill` | Create new skill definitions |
 | `private-intelligence-reader` | Build personal intelligence readers |
 
@@ -111,10 +112,17 @@ Skills are structured prompts that load domain-specific expertise into an AI age
 Each skill directory contains a `SKILL.md` file. Load them into your agent harness:
 
 ### Claude Code / Codex / Cursor
+
+For private internal use from the repository root:
+
 ```bash
-# Symlink or copy to your skills directory
-cp -r skills/* ~/.agents/skills/
+mkdir -p ~/.agents/skills
+for skill_file in */SKILL.md; do
+  cp -R "$(dirname "$skill_file")" ~/.agents/skills/
+done
 ```
+
+This installs the complete current collection for private use. Before publishing or mirroring it, follow [`DISTRIBUTION.md`](DISTRIBUTION.md) and run the provenance-controlled public export.
 
 ### Direct loading
 Skills are designed to be referenced by name. When you ask an agent to do something matching a skill's domain, reference the skill:
@@ -133,6 +141,10 @@ See the `write-a-skill` skill in this repo, or copy one of the existing skills a
 - Procedures and workflows
 - Examples where helpful
 
-## License
+## License and provenance
 
-MIT
+The root [`LICENSE`](LICENSE) is MIT and applies only to original material identified with `"license_file": "LICENSE"` in [`skills.provenance.json`](skills.provenance.json).
+
+Imported and adapted skills retain their pinned upstream licenses and attribution. Exact upstream license texts are preserved in [`LICENSES/`](LICENSES/), with a readable summary in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+All 57 current skills are redistributable under the licenses recorded in the manifest. The distribution policy still requires future entries with unclear or missing permission to be marked restricted and excluded from public exports.
