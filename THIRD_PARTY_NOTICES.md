@@ -146,9 +146,9 @@ This repository is a mixed-provenance collection. The root `LICENSE` applies onl
 
 ## Restricted material
 
-`find-skills` is byte-identical to a file in `syahiidkamil/Software-Engineer-AI-Agent-Atlas`, but that upstream repository declares no license. It is retained only because this repository is private. It must not be included in a public mirror, package, archive, or release unless the copyright holder grants permission or the upstream project adopts a license.
+- `find-skills` is byte-identical to `syahiidkamil/Software-Engineer-AI-Agent-Atlas` at `fc0bf112e01ad4b19834880fdcbf812a22273167` (`.claude/skills/find-skills/SKILL.md`), but the upstream source declares no license. It is retained for private internal use only and must not be included in a public mirror, package, archive, or release without permission or a later upstream license grant.
 
-No license in this repository grants redistribution rights for that entry.
+No license in this repository grants redistribution rights for these entries.
 
 ## Original and locally authored material
 

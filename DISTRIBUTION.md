@@ -63,3 +63,14 @@ Frontmatter fields such as `author` and `license` are useful metadata but are no
 Because the repository itself is private, Kartik may retain restricted material for internal use. A private installation may copy all skill directories, but it must not be republished wholesale.
 
 Public distribution must use the manifest-controlled export path and exclude every restricted entry.
+
+Create and verify a public export with:
+
+```bash
+python3 scripts/verify_provenance.py
+python3 scripts/render_notices.py --check
+python3 scripts/export_public.py ./dist/public-skills
+python3 scripts/verify_provenance.py --root ./dist/public-skills
+```
+
+The exporter copies only entries marked `allowed`, filters the manifest, preserves the required license files, and renders notices for the exported set.

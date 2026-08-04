@@ -124,6 +124,15 @@ done
 
 This includes the restricted internal-only skill. Do not publish or mirror the resulting directory wholesale. Public exports must follow [`DISTRIBUTION.md`](DISTRIBUTION.md) and exclude every manifest entry marked `restricted`.
 
+### Safe public export
+
+```bash
+python3 scripts/verify_provenance.py
+python3 scripts/export_public.py ./dist/public-skills
+```
+
+The exporter creates a self-contained 56-skill collection with the filtered provenance manifest, required upstream license texts, and generated notices. It refuses to include restricted entries.
+
 ### Direct loading
 Skills are designed to be referenced by name. When you ask an agent to do something matching a skill's domain, reference the skill:
 
