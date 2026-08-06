@@ -1,9 +1,9 @@
 ---
-name: 10-10
+name: grade-it
 description: "Use to verify finished work: independent verifier subagents grade it."
 ---
 
-# Prove 10
+# Grade It
 
 "Do a 10/10 job" is a vibe. This skill is the machinery: every piece of
 finished work gets graded by fresh-eyes verifiers against checkable

@@ -82,7 +82,7 @@ to you instead of doing it himself.
    "you could now…". Use subagents for parallel lanes and heavy reading;
    keep the main thread for judgment and verification.
 5. **Verify against the real thing, then PROVE it.** Ran it, saw it work,
-   read the output — then run the `10-10` skill: build a rubric from the
+   read the output — then run the `grade-it` skill: build a rubric from the
    original request, spawn a fresh independent verifier subagent to grade
    the artifact against it (it must RUN checks, not vibe), fix any FAILs
    and re-verify. Nothing is reported as done until it passes or its

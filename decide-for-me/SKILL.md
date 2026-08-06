@@ -71,7 +71,7 @@ A decision made without context is a guess. Before sorting, look:
 3. **Execute the Do bucket** fully. Real actions, real verification. Never
    spend money, post publicly, install/change config, or delete his work
    without a yes — those go to escalation.
-4. **Prove before reporting.** Run the `10-10` skill on every
+4. **Prove before reporting.** Run the `grade-it` skill on every
    deliverable: rubric from the original ask, fresh independent verifier
    subagent that RUNS checks, fix-and-re-verify loop on failures. A
    "Handled" line that a verifier didn't grade is a lie by omission.
