@@ -27,7 +27,7 @@ copy any skill directory into your harness's skills folder
 |---|---|
 | [handle-this](handle-this/) | Drop any link, file, screenshot, or idea on the agent. It identifies what it is, mines your local context (screen history, past agent sessions, repos), and acts on it completely — no steering needed. |
 | [decide-for-me](decide-for-me/) | Cognitive offload. Sorts the pile with an Eisenhower grid, executes everything safely delegable, and escalates at most 3 yes/no decisions with a recommendation and a safe default. |
-| [10-10](10-10/) | The verifier. Finished work gets graded by independent fresh-eyes subagents against a rubric built from the original request — not the author's effort. Nothing reports "done" until it passes. |
+| [grade-it](grade-it/) | The verifier. Finished work gets graded by independent fresh-eyes subagents against a rubric built from the original request — not the author's effort. Nothing reports "done" until it passes. |
 
 ### Discipline
 
