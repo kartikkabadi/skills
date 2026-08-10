@@ -19,10 +19,11 @@ or a markdown version of everything said in the video. Not for summaries (use
 
 ## Steps
 
-1. **Fetch captions with yt-dlp** (work in a scratch dir like `/tmp/ytdlp-work`):
+1. **Fetch captions with yt-dlp** (scratch dir: projectless chats use `./work/ytdlp-work`; otherwise `/tmp/ytdlp-work`):
 
    ```bash
-   mkdir -p /tmp/ytdlp-work && cd /tmp/ytdlp-work
+   SCRATCH=./work/ytdlp-work; [ -d ./work ] && [ -d ./outputs ] || SCRATCH=/tmp/ytdlp-work
+   mkdir -p "$SCRATCH" && cd "$SCRATCH"
    yt-dlp --no-update --write-auto-subs --sub-langs "en.*" --sub-format vtt \
      --skip-download "URL"
    ```
@@ -69,15 +70,21 @@ or a markdown version of everything said in the video. Not for summaries (use
    - tell it NOT to delete the input file (orchestrator does cleanup)
    - pass shared context (entity spellings, book titles, speaker/channel) via
      the batch `context` field so all 4 writers stay consistent
+   - NEVER pass incident background / prior-session knowledge about the video's
+     subject into the brief. User correction (2026-08-06): "no background stuff
+     from memory. only the actual video." The rewrite must be the video's words
+     only; shared context = spelling conventions, nothing else. Also verify
+     cross-chunk spelling consistency yourself after stitching (one agent may
+     normalize "Sinara" while others write "Synara") — unify before delivering.
 
 5. **Verify the deliverable yourself.** Check the output file exists, has all
    chapter headers, and the word count matches expectation. Subagent reports
    are self-reports — spot-check the actual file.
 
-6. **Clean up everything else.** `rm -rf /tmp/ytdlp-work` (the VTT, cleaned
+6. **Clean up everything else.** `rm -rf "$SCRATCH"` (the VTT, cleaned
    txt, any audio). If a fallback whisper model or package was installed
    specifically for this run and the user didn't have it before, remove it.
-   The ONLY surviving artifact is the markdown file in Downloads.
+   The ONLY surviving artifact is the markdown file: ./outputs/ in projectless chats, Downloads elsewhere.
 
 ## Pitfalls
 

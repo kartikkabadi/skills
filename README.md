@@ -27,6 +27,8 @@ copy any skill directory into your harness's skills folder
 |---|---|
 | [handle-this](handle-this/) | Drop any link, file, screenshot, or idea on the agent. It identifies what it is, mines your local context (screen history, past agent sessions, repos), and acts on it completely — no steering needed. |
 | [decide-for-me](decide-for-me/) | Cognitive offload. Sorts the pile with an Eisenhower grid, executes everything safely delegable, and escalates at most 3 yes/no decisions with a recommendation and a safe default. |
+| [agent-council](agent-council/) | Assembles one read-only subagent per skill lens to vote on a contested decision; later waves see earlier findings, then a tally and report. |
+| [call-advisors](call-advisors/) | Calls the fixed WATCHDOG advisor roster (Architecture, Security, Fixer, Verifier, and the rest) for review on a plan, decision, or finished work, in a native background loop or an on-demand council. |
 | [grade-it](grade-it/) | The verifier. Finished work gets graded by independent fresh-eyes subagents against a rubric built from the original request — not the author's effort. Nothing reports "done" until it passes. |
 
 ### Discipline
@@ -44,6 +46,8 @@ copy any skill directory into your harness's skills folder
 
 | Skill | What it does |
 |---|---|
+| [link-research](link-research/) | Drop a link (X, YouTube, article) and get grounded research of it. |
+| [todo-mastery](todo-mastery/) | Phased, heavily decomposed task lists with real-time tracking, from one-session tasks to 1000-todo programs. |
 | [youtube-transcript-to-markdown](youtube-transcript-to-markdown/) | Full YouTube transcript to a polished, chaptered markdown file. yt-dlp captions (whisper fallback), parallel-chunk rewrite subagents, verified output, zero artifacts left. Ships a reusable VTT rolling-caption dedupe script. |
 | [repo-inspection](repo-inspection/) | Deep codebase audits: structure, dependencies, what's built, partial, missing, blocked. |
 | [find-skills](find-skills/) | Locate, evaluate, and install existing skills before building from scratch. |
