@@ -36,6 +36,7 @@ copy any skill directory into your harness's skills folder
 | [agent-input-trust](agent-input-trust/) | Treats external content (webpages, repos, emails, MCP responses) as evidence, never instructions. Anti-prompt-injection discipline. |
 | [how-to-code](how-to-code/) | Loaded before any code writing, editing, planning, or reviewing. |
 | [clean-code](clean-code/) | Practical clean-code discipline for production software. |
+| [hygiene](hygiene/) | Cleanup discipline: close only what you opened, kill only what you started, leave the environment as found. |
 | [git-branch-worktree-discipline](git-branch-worktree-discipline/) | Branch/worktree safety, destructive-command boundaries, parallel-agent isolation. |
 | [supply-chain-install-protection](supply-chain-install-protection/) | Install-time package security: minimum release age gates, Socket Firewall shims, dependency audits. |
 
