@@ -51,6 +51,7 @@ copy any skill directory into your harness's skills folder
 | [youtube-transcript-to-markdown](youtube-transcript-to-markdown/) | Full YouTube transcript to a polished, chaptered markdown file. yt-dlp captions (whisper fallback), parallel-chunk rewrite subagents, verified output, zero artifacts left. Ships a reusable VTT rolling-caption dedupe script. |
 | [transcript-to-markdown](transcript-to-markdown/) | Source-agnostic version: YouTube, audio/video files, VTT/SRT captions, or raw text → one clean, sectioned markdown transcript. Same parallel-rewrite pipeline, plus an SRT-aware caption cleaner. |
 | [x-growth](x-growth/) | X/Twitter growth playbook for small or non-technical accounts: anti-gatekeeping, hook patterns, build-in-public, reply-gated lead magnets. Ships a hook-pattern reference with formulas and rewrites. |
+| [link-to-skill](link-to-skill/) | Drop any link — X video, YouTube, article, podcast — and get back a standalone agent skill. Extracts/transcribes the source, distills its playbook, authors a validated SKILL.md package. Ships a VTT/SRT caption cleaner. |
 | [repo-inspection](repo-inspection/) | Deep codebase audits: structure, dependencies, what's built, partial, missing, blocked. |
 | [find-skills](find-skills/) | Locate, evaluate, and install existing skills before building from scratch. |
 | [private-intelligence-reader](private-intelligence-reader/) | Build private, source-grounded intelligence readers from feeds and vault notes, with anti-slop UI gates. |
