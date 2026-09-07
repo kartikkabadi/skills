@@ -2,6 +2,7 @@
 name: youtube-transcript-to-markdown
 description: "Full YouTube transcript to polished markdown file."
 platforms: [linux, macos, windows]
+
 ---
 
 # YouTube Transcript to Polished Markdown
